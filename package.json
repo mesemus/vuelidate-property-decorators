@@ -1,6 +1,6 @@
 {
   "name": "vuelidate-property-decorators",
-  "version": "1.0.25",
+  "version": "1.0.26",
   "main": "index.js",
   "license": "MIT",
   "description": "A thin wrapper of vuelidate library to simplify its usage with vue-class-component.",
@@ -16,6 +16,9 @@
   },
   "author": "Mirek Simek (miroslav.simek@gmail.com)",
   "repository": "github:mesemus/vuelidate-property-decorators",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "dependencies": {
     "vue-class-component": "^7.0.1",
     "vuelidate": "^0.7.4"
