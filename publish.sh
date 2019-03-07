@@ -7,6 +7,4 @@ yarn version --patch
 rm -rf dist;
 npm run build
 
-cp src/index.d.ts dist/
-
 npm publish
