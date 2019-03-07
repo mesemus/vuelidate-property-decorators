@@ -1,7 +1,7 @@
 {
   "name": "vuelidate-property-decorators",
-  "version": "1.0.24",
-  "main": "dist/index.js",
+  "version": "1.0.25",
+  "main": "index.js",
   "license": "MIT",
   "description": "A thin wrapper of vuelidate library to simplify its usage with vue-class-component.",
   "keywords": [
