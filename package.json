@@ -1,0 +1,31 @@
+{
+  "name": "vuelidate-property-decorators",
+  "version": "1.0.22",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "description": "A thin wrapper of vuelidate library to simplify its usage with vue-class-component.",
+  "keywords": ["typescript", "vuelidate", "decorator", "vue-class-component"],
+  "homepage": "https://github.com/mesemus/vuelidate-property-decorators",
+  "scripts": {
+    "build": "npx babel src --out-dir dist"
+  },
+  "dependencies": {
+    "vue-class-component": "^7.0.1",
+    "vue-to-js": "^0.9.4",
+    "vuelidate": "^0.7.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/plugin-proposal-class-properties": "^7.3.4",
+    "@babel/plugin-proposal-decorators": "^7.3.0",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/preset-flow": "^7.0.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.14.0",
+    "eslint-plugin-cypress": "^2.2.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-vue": "^5.2.2",
+    "flow-bin": "^0.94.0"
+  }
+}
