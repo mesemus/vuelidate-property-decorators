@@ -80,7 +80,7 @@ export default class AddressForm extends Vue {
 ## Dynamic validations
 
 Both the argument of `@Validate(...)` and the value of `@Validations()`
-can be a function. In this case the function is called (reactively)
+can be a function that is called (reactively)
 with `this` set to the component instance.
 
 Example:
