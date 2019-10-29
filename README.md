@@ -11,6 +11,10 @@ or `vue-property-decorator`.
 yarn add vuelidate-property-decorators
 ```
 
+## Example
+
+Running example is in the ``example`` directory.
+
 ## Usage
 
 Set up `vuelidate` library as described in (https://vuelidate.netlify.com/#sub-installation).
