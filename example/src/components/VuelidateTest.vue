@@ -3,8 +3,9 @@
     <label for="positiveNumber">The following field must be filled with positive number: </label>
     <div>
         <input v-model="$v.positiveNumber.$model" id="positiveNumber">
-        <div class="error" v-if="!$v.positiveNumber.required">Field is required</div>
-        <div class="error" v-if="!$v.positiveNumber.positive">Field must be a positive number</div>
+        <div class="error" v-if="!$v.positiveNumber.required">Number is required</div>
+        <div class="error" v-if="!$v.positiveNumber.positive">Value must be a positive number</div>
+        <div class="error" v-if="!$v.positiveNumber.maxLength">Value must have at most 4 digits</div>
         <pre>{{$v.positiveNumber}}</pre>
     </div>
 </div>
@@ -13,7 +14,7 @@
 <script>
 import { Validate } from 'vuelidate-property-decorators'
 import { Component, Vue } from 'vue-property-decorator'
-import { required } from 'vuelidate/lib/validators'
+import { required, maxLength } from 'vuelidate/lib/validators'
 
 function positive (value) {
   try {
@@ -29,7 +30,8 @@ class AddressForm extends Vue {
 
   @Validate({
     required,
-    positive
+    positive,
+    maxLength: maxLength(4)
   })
   positiveNumber = '';
 
