@@ -68,7 +68,6 @@ export function Validations(): PropertyDecorator {
         }
         componentOptions.__validations['__validations__'] = k;
         componentOptions.validations = validationCreator;
-        console.log('Validations: Component options', componentOptions);
     })
 }
 
@@ -102,6 +101,5 @@ export function Validate(rules: any): PropertyDecorator {
         }
         componentOptions.__validations[k] = rules;
         componentOptions.validations = validationCreator;
-        console.log('Validation: Component options', componentOptions);
     });
 }
