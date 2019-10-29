@@ -6,7 +6,8 @@ following changes were made:
 
 1. Changed ``babel.config.js`` to use legacy decorators (required by ``vue-property-decorator``)
 2. yarn add ``vue-property-decorator`` ``vuelidate-property-decorators``
-3. Renamed ``HelloWorld`` to ``VuelidateTest``, changed to class-based vue component
+3. Set up vuelidate in ``main.js``
+4. Renamed ``HelloWorld`` to ``VuelidateTest``, changed to class-based vue component
    and added vuelidate example into this component
 
 ## Project setup
